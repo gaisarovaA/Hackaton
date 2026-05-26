@@ -1,0 +1,85 @@
+```json
+[
+  {
+    "_description": {
+      "region": "Название региона",
+      "city": "Основной промышленный город",
+
+      "lat": "Широта для отображения на карте",
+      "lon": "Долгота для отображения на карте",
+
+      "railway": "Наличие железнодорожной инфраструктуры",
+      "distance_to_highway": "Расстояние до федеральной трассы (км)",
+
+      "distance_to_steel": "Расстояние до поставщика стали (км)",
+      "distance_to_insulation": "Расстояние до поставщика утеплителя (км)",
+
+      "energy_tariff": "Тариф на электроэнергию (₽/кВт·ч)",
+      "gas_available": "Наличие газоснабжения",
+      "free_power_kva": "Свободная электрическая мощность (кВА)",
+      "connection_price": "Стоимость подключения мощности (₽/кВт)",
+
+      "salary": "Средняя заработная плата в регионе (₽)",
+      "housing_rent": "Средняя стоимость аренды жилья (₽)",
+
+      "kindergarten_index": "Обеспеченность детскими садами",
+      "urban_environment_index": "Индекс качества городской среды",
+
+      "colleges": "Количество колледжей и техникумов",
+
+      "special_economic_zone": "Наличие особой экономической зоны",
+      "insurance_discount": "Наличие льгот по страхованию",
+
+      "eco_index": "Экологический индекс региона",
+
+      "site_price_mln": "Стоимость промышленной площадки (млн ₽)",
+
+      "tax_benefits": "Уровень налоговых льгот (0-10)",
+
+      "logistic_score": "Логистическая оценка региона",
+      "social_score": "Социальная привлекательность",
+      "engineering_score": "Инженерная инфраструктура"
+    }
+  },
+
+  {
+    "region": "Татарстан",
+    "city": "Набережные Челны",
+
+    "lat": 55.7436,
+    "lon": 52.3958,
+
+    "railway": true,
+    "distance_to_highway": 12,
+
+    "distance_to_steel": 180,
+    "distance_to_insulation": 90,
+
+    "energy_tariff": 5.1,
+    "gas_available": true,
+    "free_power_kva": 950,
+    "connection_price": 4200,
+
+    "salary": 72000,
+    "housing_rent": 26000,
+
+    "kindergarten_index": 82,
+    "urban_environment_index": 215,
+
+    "colleges": 5,
+
+    "special_economic_zone": true,
+    "insurance_discount": true,
+
+    "eco_index": 6,
+
+    "site_price_mln": 120,
+
+    "tax_benefits": 9,
+
+    "logistic_score": 8.7,
+    "social_score": 8.5,
+    "engineering_score": 9.2
+  }
+]
+```
