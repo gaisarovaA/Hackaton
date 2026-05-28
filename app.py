@@ -16,11 +16,11 @@ from calculations import calculate_areas, calculate_estimate
 # =========================================
 
 st.set_page_config(
-    page_title="Наследие индустрии",
+    page_title="LOCUS",
     layout="wide"
 )
 
-st.title("🏭 Наследие индустрии")
+st.title("LOCUS")
 st.subheader("Подбор промышленной площадки и аналитика региона")
 
 
@@ -163,7 +163,7 @@ if st.session_state.run_analysis:
     # Таблица рейтинга
     # =========================================
 
-    st.header("📊 Рейтинг регионов")
+    st.header("Рейтинг регионов")
 
     rating_table = top3[[
         "region",
@@ -213,7 +213,7 @@ if st.session_state.run_analysis:
     # Социальный блок
     # =========================================
 
-    st.subheader("🏙 Социальный паспорт")
+    st.subheader("Социальный паспорт")
 
     col1, col2, col3 = st.columns(3)
 
@@ -236,7 +236,7 @@ if st.session_state.run_analysis:
     # Экономика
     # =========================================
 
-    st.subheader("💼 Экономика региона")
+    st.subheader("Экономика региона")
 
     st.write(
         f"Энерготариф: {region_data['energy_tariff']} ₽/кВт·ч"
@@ -254,7 +254,7 @@ if st.session_state.run_analysis:
     # Сетевая инфраструктура
     # =========================================
 
-    st.subheader("⚡ Сетевая инфраструктура")
+    st.subheader("Сетевая инфраструктура")
 
     st.write(
         f"Газоснабжение: {'Да' if region_data['gas_available'] else 'Нет'}"
@@ -272,7 +272,7 @@ if st.session_state.run_analysis:
     # Логистика
     # =========================================
 
-    st.subheader("🚛 Логистика сырья")
+    st.subheader("Логистика сырья")
 
     st.write(
         f"Расстояние до поставщика стали: "
@@ -288,7 +288,7 @@ if st.session_state.run_analysis:
     # Расчет площадей
     # =========================================
 
-    st.header("📐 Расчет площадей")
+    st.header("Расчет площадей")
 
     areas = calculate_areas(
         volume,
@@ -313,7 +313,7 @@ if st.session_state.run_analysis:
 
     estimate = calculate_estimate(areas)
 
-    st.header("💰 Предварительная смета")
+    st.header("Предварительная смета")
 
     st.metric(
         "Ориентировочная стоимость",
@@ -324,7 +324,7 @@ if st.session_state.run_analysis:
     # Рекомендации
     # =========================================
 
-    st.header("🧠 Рекомендации")
+    st.header("Рекомендации")
 
     recommendations = []
 
@@ -342,7 +342,6 @@ if st.session_state.run_analysis:
         recommendations.append(
             "Рекомендуется дополнительное благоустройство."
         )
-
     if len(recommendations) == 0:
         recommendations.append(
             "Регион соответствует требованиям инвестора."
@@ -350,7 +349,6 @@ if st.session_state.run_analysis:
 
     for rec in recommendations:
         st.success(rec)
-
 else:
 
     st.info(
@@ -365,6 +363,4 @@ else:
 
 st.divider()
 
-st.caption(
-    "MVP платформы анализа промышленной инфраструктуры"
-)
+st.caption("Команда Топчики 2026 | Уфимский университет науки и технологий")
